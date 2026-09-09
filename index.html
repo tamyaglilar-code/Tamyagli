@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Efe | Kişisel Web Sitesi</title>
+    <title>Tam Yağlı | Anılar</title>
     <style>
         * {
             margin: 0;
@@ -25,11 +25,11 @@
         .card {
             background-color: #1e293b;
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 35px 25px;
             max-width: 450px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
             border: 1px solid #334155;
         }
 
@@ -37,66 +37,62 @@
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px auto;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
+            object-fit: cover;
+            margin: 0 auto 15px auto;
+            border: 3px solid #3b82f6;
             box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
         }
 
         h1 {
             font-size: 26px;
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .subtitle {
             color: #94a3b8;
-            font-size: 15px;
-            margin-bottom: 20px;
+            font-size: 14px;
+            margin-bottom: 25px;
         }
 
-        .bio {
+        .info-box {
+            background-color: #0f172a;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .info-title {
+            color: #3b82f6;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .activity-list {
+            list-style: none;
+        }
+
+        .activity-list li {
             color: #cbd5e1;
             font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            background-color: #0f172a;
-            padding: 15px;
-            border-radius: 12px;
-            border: 1px solid #1e293b;
-        }
-
-        .links {
+            padding: 6px 0;
+            border-bottom: 1px dashed #1e293b;
             display: flex;
-            flex-direction: column;
-            gap: 12px;
+            align-items: center;
+            gap: 8px;
         }
 
-        .link-btn {
-            display: block;
-            padding: 14px;
-            background-color: #334155;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 1px solid #475569;
-        }
-
-        .link-btn:hover {
-            background-color: #3b82f6;
-            border-color: #3b82f6;
-            transform: translateY(-2px);
+        .activity-list li:last-child {
+            border-bottom: none;
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 12px;
             color: #64748b;
         }
@@ -105,22 +101,31 @@
 <body>
 
     <div class="card">
-        <div class="profile-img">BE</div>
-        <h1>Bilal Efe</h1>
-        <p class="subtitle">Kişisel Web Sayfası</p>
+        <!-- Profil Resmi (Buraya resim bağlantını ekleyebilirsin) -->
+        <img src="https://via.placeholder.com/150" alt="Tam Yağlı" class="profile-img">
         
-        <div class="bio">
-            Hoş geldiniz! Bu benim GitHub Pages üzerinde yayınladığım kişisel web sitem. Yazılım, e-spor ve teknoloji projelerimi buradan paylaşacağım.
+        <h1>Tam Yağlı</h1>
+        <p class="subtitle">Buluşma & Aktivite Günlüğü</p>
+
+        <!-- Son Buluşma Tarihi -->
+        <div class="info-box">
+            <div class="info-title">📅 Son Buluşma Tarihi</div>
+            <div style="color: #f8fafc; font-weight: 600; font-size: 15px;">4 Eylül 2026</div>
         </div>
 
-        <div class="links">
-            <a href="https://github.com/tamyaglilar-code" target="_blank" class="link-btn">GitHub Profilim</a>
-            <a href="#" class="link-btn">Projelerim</a>
-            <a href="#" class="link-btn">İletişime Geç</a>
+        <!-- Buluşmada Ne Yaptık -->
+        <div class="info-box">
+            <div class="info-title">📍 Buluşma Akışı</div>
+            <ul class="activity-list">
+                <li>🖥️ İnternet kafede 2 saat oyun</li>
+                <li>🥙 Körfez Döner'de yemek</li>
+                <li>🀄 Okey keyfi</li>
+                <li>🥤 Burger King'den Milkshake</li>
+            </ul>
         </div>
 
         <footer>
-            © 2026 ig= b_efe4o — Tüm hakları saklıdır.
+            © 2026 Tam Yağlı — Tüm hakları saklıdır.
         </footer>
     </div>
 
